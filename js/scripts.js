@@ -191,13 +191,57 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     (function () {
-      $('.image-link').magnificPopup({
-
+      $('.swift-project').magnificPopup({
         gallery: {
           enabled: true
         },
-        removalDelay: 300, // Delay in milliseconds before popup is removed
-        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        removalDelay: 300,
+        mainClass: 'mfp-with-zoom',
+        type:'image'
+      });
+
+      $('.bloomtube-project').magnificPopup({
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-with-zoom',
+        type:'image'
+      });
+
+      $('.glutt-project').magnificPopup({
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-with-zoom',
+        type:'image'
+      });
+
+      $('.atomized-project').magnificPopup({
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-with-zoom',
+        type:'image'
+      });
+
+      $('.kidshub-project').magnificPopup({
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-with-zoom',
+        type:'image'
+      });
+
+      $('.invoiceapp-project').magnificPopup({
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-with-zoom',
         type:'image'
       });
 
