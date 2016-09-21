@@ -1,5 +1,5 @@
 /*
-Author: Mayurkumar Patel
+Author: Hardik Kanjariya
 */
 
 /*
@@ -202,54 +202,6 @@ jQuery(function ($) {
       });
 
     }());
-
-
-
-    (function () {
-        $('.popup-video').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-with-zoom',
-            removalDelay: 300,
-            preloader: false,
-            fixedContentPos: false
-        });
-    }());
-
-
-
-
-
-    // -------------------------------------------------------------
-    // Fit Vids
-    // -------------------------------------------------------------
-    (function () {
-        $(".video-container").fitVids();
-    }());
-
-
-
-    // -------------------------------------------------------------
-    // Vidio auto play
-    // -------------------------------------------------------------
-    (function () {
-    
-    /* Vimeo API: http://developer.vimeo.com/player/js-api */
-    
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
-
-        $('.modal').on('hidden.bs.modal', function () {
-        player.api('pause');
-        })
-
-        $('.modal').on('shown.bs.modal', function () {
-        player.api('play');
-        })
-    }());
-
-
 
 
     // -------------------------------------------------------------
