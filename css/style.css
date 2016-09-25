@@ -1,7 +1,6 @@
 /*
-    Author: Mayurkumar Patel
+    Author: Hardik Kanjariya
 */
-
 
 /*
 ====================================
@@ -1819,4 +1818,124 @@ Icon for all respective meta
     border: 5px solid #FFF;
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
+}
+
+
+/*  Front Page Loader  */
+.mask svg {
+    bottom: 13.5px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.centered {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#three.no-webgl {
+    background: url(../images/jpeg/home/backgrounds/bg-home.jpg) no-repeat;
+    background-size: cover;
+}
+#three.no-webgl canvas {
+    display: none;
+}
+#three, canvas {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%}
+
+.loader {
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(data:image/svg+xml;
+    base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA2MDYwNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzExMTExMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, #060606), color-stop(100%, #111));
+    background-image: -moz-linear-gradient(top, #060606, #111);
+    background-image: -webkit-linear-gradient(top, #060606, #111);
+    background-image: linear-gradient(to bottom, #060606, #111);
+}
+.loader .loading-ctn {
+    width: 500px;
+    height: 220px;
+    text-align: center;
+    overflow: hidden;
+}
+.loader .loading, .loader h2 {
+    opacity: 0;
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+}
+.loader h2 {
+    position: relative;
+    width: 428px;
+    margin: 80px auto 15px;
+    font: 400 1.875em "718light";
+    color: #5d5d5d;
+    text-transform: uppercase;
+}
+.loader h2 strong {
+    font-family: "718_thinbold"}
+.loader h2 .mask {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 3px;
+    height: 100%;
+    width: 0;
+    color: #fff;
+    white-space: nowrap;
+}
+.loader h2 .mask.right-mask {
+    left: 0;
+}
+.loader .loading {
+    display: block;
+    font: 400 .875em latolight;
+    color: #4cec95;
+}
+.loader .loading.anim {
+    -moz-animation: light 1.2s linear infinite;
+    -webkit-animation: light 1.2s linear infinite;
+    animation: light 1.2s linear infinite;
+}
+.loader path, .loader svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+.loader .loading-border path {
+    stroke-dasharray: 1440;
+    stroke-dashoffset: 1440;
+}
+.loader .box-borders {
+    opacity: 0;
+}
+.loader .box-borders span {
+    z-index: 2;
 }
